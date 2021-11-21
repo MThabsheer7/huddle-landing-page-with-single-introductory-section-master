@@ -1,0 +1,133 @@
+:root {
+  --clr-primary: hsl(257, 40%, 49%);
+  --clr-secondary: hsl(300, 69%, 71%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-image: url("images/bg-desktop.svg");
+  background-color: var(--clr-primary);
+  color: whitesmoke;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 1em;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.15em;
+}
+
+.container {
+  width: 90%;
+  margin: 2em auto;
+}
+
+#logo {
+  width: 200px;
+  margin-bottom: 2em;
+}
+
+.hero-container {
+  display: flex;
+  margin: 2em 0 2em 0;
+  justify-content: center;
+}
+.hero-img {
+  width: 50%;
+}
+.hero-text {
+  width: 50%;
+  padding: 2em 0 2em 0;
+}
+.hero-text * {
+  width: 75%;
+}
+
+#cover-img {
+  max-width: 100%;
+}
+.hero-text button {
+  width: 175px;
+  height: auto;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125em;
+  padding: 1em;
+  border: none;
+  border-radius: 100px;
+  color: var(--clr-primary);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 25px;
+}
+button:hover {
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+  background-color: var(--clr-secondary);
+  color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 0 35px;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.soc-icon {
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+.soc-icon:hover {
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+  color: var(--clr-secondary);
+}
+
+@media only screen and (max-width: 375px) {
+  /* For mobile phones: */
+  body {
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+  }
+  #logo {
+    width: 150px;
+    margin-bottom: 1.5em;
+  }
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .hero-text {
+    width: 100%;
+    padding: 2em 0 2em 0;
+    text-align: center;
+  }
+  .footer-container {
+    justify-content: center;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.15em;
+  }
+  .hero-text * {
+    margin: 1em auto;
+  }
+  .hero-text button {
+    width: 150px;
+  }
+}
